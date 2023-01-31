@@ -44,8 +44,13 @@ function App() {
 
   // Return the movie cards inside a div
   return (
-    <div className="w-screen h-screen overflow-auto bg-gray-200 mx-auto">
-      <div className="w-[1000px] mx-auto">{renderMovies()}</div>
+    <div className="bg-gray-900 w-screen h-screen overflow-auto mx-auto">
+      <div className="w-[calc(100%-10rem)] mx-auto bg-red-900">
+        <h1 className="text-center text-5xl font-medium text-gray-200 py-4">
+          HELLO ANGELA
+        </h1>
+      </div>
+      <div className="p-5 grid grid-cols-4 gap-5">{renderMovies()}</div>
     </div>
   );
 }
