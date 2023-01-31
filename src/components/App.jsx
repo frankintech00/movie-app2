@@ -9,6 +9,8 @@ function App() {
   // API Key for accessing the database
   const API_KEY = "7312f41c50231306aa4e719fc961450a";
 
+  //TODO: Move API key to .env file
+
   // State variable to store the movie data
   const [movies, setMovies] = useState([]);
 
@@ -42,8 +44,8 @@ function App() {
 
   // Return the movie cards inside a div
   return (
-    <div className="">
-      <div>{renderMovies()}</div>
+    <div className="w-screen h-screen overflow-auto bg-gray-200 mx-auto">
+      <div className="w-[1000px] mx-auto">{renderMovies()}</div>
     </div>
   );
 }
